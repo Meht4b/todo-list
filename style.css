@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+#checkbox{
+    float: left;
+    background-color: rgb(253, 0, 0);
+    border: none;
+}
