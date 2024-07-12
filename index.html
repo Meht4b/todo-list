@@ -8,11 +8,38 @@
 </head>
 <body>
     <div class="container">
-        <div class="app">
-            <h1 class="icon">To Do list</h1>
-            <input type="text" class="create_task">
-            <p><input type="checkbox">think</p>
-            <script src="script.js"></script>
+        <div class="navbar">
+            <div class="navbarTop">
+                <div class="Title">Menu</div>
+                <ul class="menuTasks">
+                    <li>Tasks</li>
+                    <li>Sticky Wall</li>
+                    <li>Lists</li>
+                    <li>                                  
+                        <ul class="lists">
+                            <li>work</li>
+                            <li>personal</li>
+                            <li>job</li>
+                            <li>see all</li>
+                    </li>
+            </div>
+            <div class="navbarBottom">
+                sign out
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="day"><button><</button><div>Thursday</div><button>></button></div>
+            <div class="newTask">
+                <div>create new task</div>
+                <div class="newTaskInput"><input type="text"><button>+</button></div>
+            </div>
+            <ul class="taskList">
+                <li><input type="checkbox">clean room</li>
+                <li><input type="checkbox">make money</li>
+                <li><input type="checkbox">make more money</li>
+                <li><input type="checkbox">gamble</li>
+            </ul>
+
         </div>
     </div>
 </body>
