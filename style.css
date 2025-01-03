@@ -4,27 +4,158 @@
 }
 
 body {
-    height: 100svh;
+    height: 100vh;
     margin: 0px;
-    padding: 0;
-    font-family: centuryGothic , Arial, sans-serif;
-    background-color: white;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    font-family: "Poppins" , Arial, sans-serif;
+    background-color: hsl(38, 70%, 95%);
     display: grid;
     grid-template-columns: 1fr 5fr;
+    
+}
+
+h1{
+    font-size: 40px;
+    margin: 10px;
+}
+
+
+h3{
+    font-weight: 400;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    padding: 20px;
+    outline: solid 2px black;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    display: flex;
+    
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+    background-color: #FFD1D1;
+    border-radius: 1px;
+    
+}
+
+.navbarTop{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbarTop>ul{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+}
+
+.navbarTop>ul>li{
+    padding-left: 10px;
+    border-radius: 1px;
+    
+}
+
+.tasks{
+    padding: 30px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    
+    height: 85%;
+    align-items: center;
     
     
 }
 
-
-.navbar{
-    padding: 10%;
+.day{
+    background-color: #FFD1D1;
+    padding: 0px;
     display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    border: solid 2px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+
+}
+
+.day button{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    outline: none;
+    background:none;
+    border: none;
+    font-size: 25px;
+}
+
+.newTask{    
+    width: 100%;
+    align-self: flex-start;
+}
+
+.newTaskInput{
+    width: 70%;
+    display: flex;
+    border: solid 2px black;
+    
+}
+
+.newTaskInput input{
+    font-family: "Poppins";
+    padding: 6px;
+    width: 100%;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background:none;
+}
+.newTaskInput button{
+    font-family: "Poppins";
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background:none;
+}
+
+.taskList{
+    align-self: flex-start;
+}
+
+.taskList>li{
+    display: flex;
+        
 }
 
 
 #veepn-breach-alert{
+    
     display: none;
 }
