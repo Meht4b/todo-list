@@ -23,7 +23,8 @@ h1{
 
 h3{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
+    margin: 0;
 }
 
 h4{
@@ -96,18 +97,19 @@ li{
 
 .day{
     background-color: #FFD1D1;
-    padding: 0px;
+
     display: flex;
     gap: 20px;
     align-items: center;
     border: solid 2px black;
-    padding-left: 20px;
-    padding-right: 20px;
+
+
     border-radius: 2px;
 
 }
 
 .day button{
+    transition: 0.2s;
     display: flex;
     align-items: center;
     height: 50px;
@@ -115,6 +117,14 @@ li{
     background:none;
     border: none;
     font-size: 25px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.day button:hover{
+    background-color: #FF9494;
+    
 }
 
 .newTask{    
@@ -123,9 +133,10 @@ li{
 }
 
 .newTaskInput{
-    width: 70%;
+    width: 100%;
     display: flex;
     border: solid 2px black;
+    background-color: #D1FFFF;
     
 }
 
@@ -139,6 +150,7 @@ li{
     background:none;
 }
 .newTaskInput button{
+    transition: 0.2s;
     font-family: "Poppins";
     font-size: 30px;
     outline: none;
@@ -146,13 +158,24 @@ li{
     background:none;
 }
 
+.newTaskInput button:hover{
+    
+    background-color: #94FFFF;
+}
+
+
 .taskList{
+    margin-top: 40px;
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .taskList>li{
     display: flex;
-        
+    align-items: center;
+    gap: 10px;
 }
 
 
